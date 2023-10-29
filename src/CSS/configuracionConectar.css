@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.contenedorPrincipal {
+    -fx-background-color: linear-gradient(to bottom right, #22294a, #123b65);
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1px;
+}
+
+.btnConectar {
+    -fx-background-color: linear-gradient(to bottom, #354aa4, #123b65);
+    -fx-text-fill: #FFF;
+    -fx-border-color: #000;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+}

@@ -1,0 +1,63 @@
+#contenedorBotones {
+    -fx-background-color: linear-gradient(to top, #333C6F, #2861B2);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 3px;
+    -fx-border-color: #000;
+}
+
+#btnEntidad, #btnRelacion, #btnEntidadDebil, #btnRelacionDebil,
+#btnAtributo, #btnGE, #btnAtributoMulti, #btnAtributoDerivado {
+    -fx-background-color: #FFFFFF;   
+    -fx-background-radius: 5px;
+    -fx-border: 0px;
+    -fx-border-radius: 5px;
+}
+
+#btnEntidad:hover, #btnRelacion:hover, #btnEntidadDebil:hover, #btnRelacionDebil:hover,
+#btnAtributo:hover, #btnGE:hover, #btnAtributoMulti:hover, #btnAtributoDerivado:hover {
+    -fx-background-color: #C4DCFF;  
+}
+
+#contenedorRel {
+    -fx-background-color: #2861B2;
+    -fx-background-radius: 5px;
+}
+
+#campoEntidad_uno, #campoEntidad_dos,
+#radioEnt_1, #radioEnt_2, #radioEnt_3, #radioEnt_4 {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Century Gothic';
+}
+
+#btnVerificar, #btnEliminar {
+    -fx-background-color: #00B900;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 5px;
+}
+
+#btnVerificar:hover {
+    -fx-background-color:  #039303;
+}
+
+#btnEliminar {
+    -fx-background-color: #B90000;
+}
+
+#btnEliminar:hover {
+    -fx-background-color: #8E0000;
+}
+
+#contenedorScroll .scroll-bar:horizontal,
+#contenedorScroll .scroll-bar:vertical {
+    -fx-background-color: #002E5E; /* Cambiar el color de relleno de ambas barras */
+    -fx-background-radius: 5px; /* Opcional: ajustar el radio de las esquinas de las barras */
+    -fx-padding: 10px;
+}
+
+
+

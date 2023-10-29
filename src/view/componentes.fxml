@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1493.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.botonesController">
+   <children>
+      <Pane fx:id="contenedorEntidad" layoutX="14.0" layoutY="82.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Rectangle fx:id="entidad" arcHeight="5.0" arcWidth="5.0" fill="#2b98ff" height="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Rectangle>
+            <TextField fx:id="nombreEntidad" alignment="CENTER" layoutX="10.0" layoutY="25.0" prefHeight="50.0" prefWidth="180.0" promptText="Nombre de Entidad" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane fx:id="contenedorEntidadDebil" layoutX="221.0" layoutY="82.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b98ff" height="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b98ff" height="80.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="180.0">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Rectangle>
+            <TextField fx:id="nombreEntidadDebil" alignment="CENTER" layoutX="10.0" layoutY="25.0" prefHeight="50.0" prefWidth="180.0" promptText="Nombre de Entidad" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="contenedorAtributo" layoutX="14.0" layoutY="200.0" prefHeight="60.0" prefWidth="120.0">
+         <children>
+            <Ellipse fill="DODGERBLUE" layoutX="60.0" layoutY="30.0" radiusX="60.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Ellipse>
+            <TextField fx:id="nombreAtributo" alignment="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="30.0" prefWidth="100.0" promptText="Nombre" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="contenedorAtributoM" layoutX="161.0" layoutY="200.0" prefHeight="60.0" prefWidth="120.0">
+         <children>
+            <Ellipse fill="DODGERBLUE" layoutX="60.0" layoutY="30.0" radiusX="60.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Ellipse>
+            <Ellipse fill="DODGERBLUE" layoutX="60.0" layoutY="30.0" radiusX="55.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Ellipse>
+            <TextField fx:id="nombreAtributoM" alignment="CENTER" layoutX="10.0" layoutY="15.0" prefHeight="30.0" prefWidth="100.0" promptText="Nombre" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="contenedorGE" layoutX="435.0" layoutY="82.0" prefHeight="100.0" prefWidth="100.0">
+         <children>
+            <Polygon fill="DODGERBLUE" layoutX="50.0" layoutY="60.0" rotate="180.0" stroke="BLACK" strokeType="INSIDE">
+              <points>
+                <Double fx:value="-50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="50.0" />
+                <Double fx:value="40.0" />
+                <Double fx:value="0.0" />
+                <Double fx:value="-60.0" />
+              </points>
+            </Polygon>
+            <Label fx:id="labelTipo" alignment="CENTER" layoutX="22.0" layoutY="14.0" prefHeight="25.0" prefWidth="60.0">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="contenedorRelacion" layoutX="205.0" layoutY="282.0" prefHeight="170.0" prefWidth="150.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="25.0" layoutY="50.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            <TextField fx:id="nombreRelacion" alignment="CENTER" layoutX="15.0" layoutY="75.0" prefHeight="50.0" prefWidth="120.0" promptText="Relación" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <Label fx:id="cardUno" alignment="CENTER" layoutY="18.0" prefHeight="18.0" prefWidth="54.0" styleClass="cardinalidad" stylesheets="@../CSS/styles.css" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="cardDos" alignment="CENTER" layoutX="92.0" layoutY="18.0" prefHeight="18.0" prefWidth="54.0" styleClass="cardinalidad" stylesheets="@../CSS/styles.css" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Pane>
+      <Pane fx:id="contenedorRelacionD" layoutX="14.0" layoutY="274.0" prefHeight="170.0" prefWidth="150.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" layoutX="25.0" layoutY="50.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="35.0" layoutY="60.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+            <TextField fx:id="nombreRelacionD" alignment="CENTER" layoutX="15.0" layoutY="75.0" prefHeight="50.0" prefWidth="120.0" promptText="Releación Débil" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+            <Label fx:id="cardUnoD" alignment="CENTER" layoutX="-1.0" layoutY="23.0" prefHeight="18.0" prefWidth="54.0" styleClass="cardinalidad" stylesheets="@../CSS/styles.css" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="cardDosD" alignment="CENTER" layoutX="96.0" layoutY="23.0" prefHeight="18.0" prefWidth="54.0" styleClass="cardinalidad" stylesheets="@../CSS/styles.css" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="contenedorAtributoDerivado" layoutX="321.0" layoutY="200.0" prefHeight="60.0" prefWidth="120.0">
+         <children>
+            <Ellipse fx:id="figuraDerivado" fill="DODGERBLUE" layoutX="60.0" layoutY="29.0" radiusX="60.0" radiusY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Ellipse>
+            <TextField fx:id="nombreAtributoD" alignment="CENTER" layoutX="10.0" layoutY="15.0" prefHeight="30.0" prefWidth="100.0" promptText="Nombre" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Pane>
+   </children>
+</AnchorPane>

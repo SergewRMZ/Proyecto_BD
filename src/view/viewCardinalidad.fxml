@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="contenedor" prefHeight="259.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="controller.ViewCardinalidadController">
+    <stylesheets>
+        <URL value="@/CSS/viewcardinalidad.css" />
+    </stylesheets>
+   <children>
+      <HBox prefHeight="200.0" prefWidth="400.0">
+         <children>
+            <GridPane prefHeight="300.0" prefWidth="400.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="nombreEnt2" alignment="CENTER" prefHeight="37.0" prefWidth="200.0" text="Entidad 2" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nombreEnt1" alignment="CENTER" prefHeight="37.0" prefWidth="200.0" text="Entidad 1">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="unoEnt1" mnemonicParsing="false" text="Uno" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="unoEnt2" mnemonicParsing="false" text="Uno" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="muchosEnt1" mnemonicParsing="false" text="Muchos" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="muchosEnt2" mnemonicParsing="false" text="Muchos" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+      <Button fx:id="btnAceptar" layoutX="133.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Aceptar" />
+   </children>
+</AnchorPane>
